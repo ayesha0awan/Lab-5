@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Registration</h1>
+
+        <!-- Registration Form -->
+        <form id="registrationForm">
+
+            <label>Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter your name">
+            <small id="nameError"></small>
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <small id="emailError"></small>
+
+            <label>Program</label>
+            <select id="program">
+                <option value="">Select Program</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Software Engineering">Software Engineering</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+            </select>
+            <small id="programError"></small>
+
+            <label>Semester</label>
+            <input type="number" id="semester" placeholder="Enter semester" min="1" max="8">
+            <small id="semesterError"></small>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <!-- Live Preview -->
+        <div class="card" id="previewCard">
+
+            <h2>Student Preview</h2>
+
+            <p><strong>Name:</strong> <span id="previewName">Your Name</span></p>
+
+            <p><strong>Email:</strong> <span id="previewEmail">Your Email</span></p>
+
+            <p><strong>Program:</strong> <span id="previewProgram">Your Program</span></p>
+
+            <p><strong>Semester:</strong> <span id="previewSemester">Your Semester</span></p>
+
+        </div>
+
+        <!-- Dark Mode Button -->
+        <button id="themeButton">Toggle Dark Mode</button>
+
+        <!-- Registered Students -->
+        <h2>Registered Students</h2>
+
+        <ul id="studentList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
